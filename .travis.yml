@@ -28,7 +28,7 @@ jobs:
       language: bash
       script:
         - echo "Downloading $RELEASE_TAG"
-        - wget -P target https://github.com/$GITHUB_USERNAME/msi-registry/releases/download/$RELEASE_TAG/pal-tracker.jar
+        - wget -P target https://github.com/$GITHUB_USERNAME/msi-registry/releases/download/$RELEASE_TAG/registry.jar
       before_deploy:
         - echo "Deploying $RELEASE_TAG to Cloud Foundry"
       deploy:
