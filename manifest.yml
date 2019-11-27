@@ -9,4 +9,4 @@ applications:
   - java_buildpack
   stack: cflinuxfs3
   env:
-    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 8.+ } }'
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 1.8.+ } }'
