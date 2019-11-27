@@ -1,0 +1,12 @@
+---
+applications:
+- name: eureka-registry-server
+  memory: 682M
+  routes:
+  - route: eureka-registry-server-bdx01.apps.eu01.cf.canopy-cloud.com
+  path: target/registry.jar
+  buildpacks: 
+  - java_buildpack
+  stack: cflinuxfs3
+  env:
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 8.+ } }'
