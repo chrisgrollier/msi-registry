@@ -2,6 +2,7 @@
 applications:
 - name: eureka-registry-server
   memory: 682M
+  disk_quota: 256M
   routes:
   - route: eureka-registry-server-bdx01.apps.eu01.cf.canopy-cloud.com
   path: target/registry.jar
